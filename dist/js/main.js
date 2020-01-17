@@ -15,18 +15,18 @@ function toggleMenu() {
     if (!showMenu) {
         menuBtn.classList.add('close');
         menu.classList.add('show');
-        menuNav.classList.add('close');
-        menuBranding.classList.add('close');
-        navItems.forEach(item => item.classList.add('close'));
+        menuNav.classList.add('show');
+        menuBranding.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
 
         // Set menu state
         showMenu = true;
     } else {
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
-        menuNav.classList.remove('close');
-        menuBranding.classList.remove('close');
-        navItems.forEach(item => item.classList.remove('close'));
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
 
         // Set menu state
         showMenu = false;
